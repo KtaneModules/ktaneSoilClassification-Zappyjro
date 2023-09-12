@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 114792798728891422}
   - component: {fileID: 114865359298548712}
   - component: {fileID: 114528735489023490}
+  - component: {fileID: 114903329612767412}
   m_Layer: 0
   m_Name: soilClassification
   m_TagString: Untagged
@@ -286,6 +287,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1897270352549386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4175922599738320}
+  m_Layer: 0
+  m_Name: Module Centre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1919688433157146
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +349,19 @@ Transform:
   m_Father: {fileID: 4060117017894754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &4175922599738320
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1897270352549386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4499889747123920}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4247287175004328
 Transform:
   m_ObjectHideFlags: 1
@@ -420,6 +449,7 @@ Transform:
   - {fileID: 4891197051675616}
   - {fileID: 4060117017894754}
   - {fileID: 4247287175004328}
+  - {fileID: 4175922599738320}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1327,7 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - GUI/Text Shader
+  - GUI/KT 3D Text
 --- !u!114 &114693608962383476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1364,7 +1394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - GUI/Text Shader
+  - GUI/KT 3D Text
 --- !u!114 &114821600966037112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1405,6 +1435,43 @@ MonoBehaviour:
   ModuleType: soilClassification
   ModuleDisplayName: Soil Classification
   RequiresTimerVisibility: 0
+--- !u!114 &114903329612767412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627673074520466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a090456838062345a4b6c2183b55e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 114944307143701832}
+  Module: {fileID: 114865359298548712}
+  Info: {fileID: 114792798728891422}
+  btn:
+  - {fileID: 114414512460451354}
+  - {fileID: 114485488093304138}
+  - {fileID: 114193313228346574}
+  left: {fileID: 114414512460451354}
+  right: {fileID: 114485488093304138}
+  submit: {fileID: 114193313228346574}
+  Screen: {fileID: 102427740049208586}
+  shapes:
+  - {fileID: 1113992792480888, guid: d431a4651aa0668489382126026d40c5, type: 2}
+  - {fileID: 1069154552126802, guid: f6edf7ab7289b0747ac8b0d7f4f2b8c1, type: 2}
+  - {fileID: 1798601398226380, guid: a6f63f86c851c664caa4594bb3617d73, type: 2}
+  - {fileID: 1464126821343994, guid: e2989ca96c5059740af4ebc421e144ce, type: 2}
+  - {fileID: 1806367229976540, guid: eef73d7d87adbfc43a8fe61bdb7cd544, type: 2}
+  - {fileID: 1290178768879110, guid: 8b5fe460680b24f4981eb6803383ffab, type: 2}
+  - {fileID: 1239707036858398, guid: 6d52c2dd81cba2247bc013240ad3e04f, type: 2}
+  - {fileID: 1929885786358220, guid: 9751479485f08534698f189f3d9f2ad2, type: 2}
+  - {fileID: 1119712784085292, guid: b50f37602377b1a488964cf99d041300, type: 2}
+  - {fileID: 1256861141960744, guid: cf41d0ae916fb0d4380d3beed1e5f32b, type: 2}
+  - {fileID: 1970045852661844, guid: 2ec048757bf63e94ab13a4d1d840c2e8, type: 2}
+  - {fileID: 1403185601135294, guid: e1a01ee8b804c0d449e023a1dd8cd1da, type: 2}
+  modulecentre: {fileID: 1627673074520466}
+  ypos: 0.02
 --- !u!114 &114944307143701832
 MonoBehaviour:
   m_ObjectHideFlags: 1
