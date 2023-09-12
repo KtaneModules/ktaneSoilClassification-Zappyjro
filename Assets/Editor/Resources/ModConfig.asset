@@ -18,4 +18,4 @@ MonoBehaviour:
     the diagram.
   version: 1.0
   outputFolder: build
-  previewImage: {fileID: 0}
+  previewImage: {fileID: 2800000, guid: 4dc4d6c14fd69f440bf0425f432873d1, type: 3}
