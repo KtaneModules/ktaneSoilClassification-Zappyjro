@@ -118,8 +118,8 @@ public class SoilClassification : MonoBehaviour {
 		};
 
 		//Calculating Sand Percentage
-		sand += (6 * Info.GetBatteryCount(Battery.AA));
-		Debug.LogFormat ("[Soil Classification #{0}] {1} AA batteries, sand% is now {2}", _moduleId, Info.GetBatteryCount(Battery.AA), sand);
+		sand += (6 * (Info.GetBatteryCount(Battery.AA) / 2));
+		Debug.LogFormat ("[Soil Classification #{0}] {1} pairs of AA batteries, sand% is now {2}", _moduleId, (Info.GetBatteryCount(Battery.AA)/2), sand);
 		sand += (6 * Info.GetPortCount(Port.RJ45));
 		Debug.LogFormat ("[Soil Classification #{0}] {1} RJ-45 port(s), sand% is now {2}", _moduleId, Info.GetPortCount(Port.RJ45), sand);
 		sand += (9 * Info.GetPortCount(Port.DVI));
