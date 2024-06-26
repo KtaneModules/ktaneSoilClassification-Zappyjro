@@ -252,7 +252,7 @@ public class SoilClassification : MonoBehaviour {
 		} else if (clay > 12) {
 			if (silt > 50) {
 				answer = 10;
-			} else if (sand < 55) {
+			} else if (sand < 53) {
 				answer = 3;
 			} else if (sand >= (70 + clay)) {
 				answer = 1;
