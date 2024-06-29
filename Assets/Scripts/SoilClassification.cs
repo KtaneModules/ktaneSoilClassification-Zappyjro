@@ -232,7 +232,7 @@ public class SoilClassification : MonoBehaviour {
 			}
 			;
 		} else if (clay > 20) {
-			if (silt <= 23) {
+			if (silt <= 27) {
 				answer = 4;
 			} else if (silt > 50) {
 				answer = 10;
